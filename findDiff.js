@@ -16,11 +16,10 @@ class findDiff {
     }
     insertArrTemp(a) {
         this.arrTemp.push(a);
-        return false;
     }
     checkArr(arr) {
         if (arr.length) {
-            if (this.checkArrTemp(this.arr[0])) {
+            if (this.checkArrTemp(arr[0])) {
                 return true;
             } else {
                 arr.shift();
